@@ -8,6 +8,10 @@
 		"email": "hello@work-with-jan.com",
 		"url": "https://work-with-jan.com"
 	},
+	"publisher": "janschulte",
+	"repository": {
+		"url": "https://github.com/schultyy/site-to-markdown"
+	},
 	"license": "MIT",
 	"engines": {
 		"vscode": "^1.53.0"
