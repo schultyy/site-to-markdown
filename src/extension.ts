@@ -28,8 +28,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 		if(!url) return;
 		let website = new Website(url);
-		let websiteContent = await website.download();
-		console.log(websiteContent);
+		try {
+			let websiteContent = await website.download();
+			console.log(websiteContent);
+		}
+		catch(exc) {
+			vscode.window.showErrorMessage(exc.message);
+		}
 	});
 
 	context.subscriptions.push(disposable);
