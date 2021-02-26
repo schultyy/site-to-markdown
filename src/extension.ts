@@ -26,11 +26,16 @@ export function activate(context: vscode.ExtensionContext) {
 		// Display a message box to the user
 		vscode.window.showInformationMessage(`Downloading ${url}`);
 
-		if(!url) return;
+		if (!url){
+			return;
+		}
 		let website = new Website(url);
 		try {
 			let websiteContent = await website.download();
-			console.log(websiteContent);
+			vscode.workspace.openTextDocument({
+				language: 'markdown',
+				content: websiteContent.toString()
+			});
 		}
 		catch(exc) {
 			vscode.window.showErrorMessage(exc.message);
