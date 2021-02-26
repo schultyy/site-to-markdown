@@ -3,6 +3,12 @@
 	"displayName": "site-to-markdown",
 	"description": "Downloads a website and converts it into markdown",
 	"version": "0.0.1",
+	"author": {
+		"name": "Jan Schulte",
+		"email": "hello@work-with-jan.com",
+		"url": "https://work-with-jan.com"
+	},
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
