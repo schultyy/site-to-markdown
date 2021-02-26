@@ -1,5 +1,5 @@
 {
-  "name": "site-to-markdown",
+	"name": "site-to-markdown",
 	"displayName": "site-to-markdown",
 	"description": "Downloads a website and converts it into markdown",
 	"version": "0.0.1",
@@ -10,7 +10,7 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:site-to-markdown.download"
+		"onCommand:site-to-markdown.download"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
@@ -30,16 +30,20 @@
 		"test": "node ./out/test/runTest.js"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.53.0",
 		"@types/glob": "^7.1.3",
 		"@types/mocha": "^8.0.4",
 		"@types/node": "^12.11.7",
-		"eslint": "^7.19.0",
+		"@types/vscode": "^1.53.0",
 		"@typescript-eslint/eslint-plugin": "^4.14.1",
 		"@typescript-eslint/parser": "^4.14.1",
+		"eslint": "^7.19.0",
 		"glob": "^7.1.6",
 		"mocha": "^8.2.1",
 		"typescript": "^4.1.3",
 		"vscode-test": "^1.5.0"
+	},
+	"dependencies": {
+		"node-fetch": "^2.6.1",
+		"turndown": "^7.0.0"
 	}
 }
