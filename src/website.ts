@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+// eslint-disable-next-line @typescript-eslint/naming-convention
 const TurndownService = require('turndown');
 
 export default class Website {
