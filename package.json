@@ -10,14 +10,14 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:site-to-markdown.helloWorld"
+        "onCommand:site-to-markdown.download"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "site-to-markdown.helloWorld",
-				"title": "Hello World"
+				"command": "site-to-markdown.download",
+				"title": "Download"
 			}
 		]
 	},
